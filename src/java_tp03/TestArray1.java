@@ -3,6 +3,8 @@
  */
 package java_tp03;
 
+import java.util.Arrays;
+
 /**
  * @author ETY0009
  *
@@ -36,6 +38,32 @@ public class TestArray1 {
 		}
 		
 		// boucle pour afficher que les entiers supérieurs à 3
+		System.out.println("\npoint 3");
+		for(int item : array) {
+			
+			if(item > 3)
+				System.out.println(item);
+			
+		}
+		
+		// boucle affiche que les entiers pairs
+		System.out.println("\npoint 4");
+		for(int item : array) {
+			
+			if(item%2 == 0)
+				System.out.println(item);
+			
+		}
+		
+		// afficher le plus grand element du tableau
+		System.out.println("\npoint 5");
+		Arrays.sort(array);
+		System.out.println(array[array.length-1]);
+		
+		// afficher le plus grand element du tableau
+		System.out.println("\npoint 6");
+		Arrays.sort(array);
+		System.out.println(array[0]);
 		
 	}
 
