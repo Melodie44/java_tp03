@@ -23,31 +23,17 @@ public class TestArray2 {
 			}
 		}
 		
-		// trouver nombre entiers en doublon dans le tableau
+		// trouver doublons dans le tableau
 		System.out.println("\nDoublons");
-		int doublon;
-		int index = 0;
-		int tab2[] = new int[array.length];
-		
-		for(int item : array) {
-			
-			doublon = 0;
+		for(int i=0; i <= array.length-1; i++) {
 				
-			for(int i=0; i <= array.length-1; i++) {
+			for(int j=i; j <= array.length-1; j++) {
 					
-				if(item == array[i]) {
+				if(i != j && array[i] == array[j]) {
 						
-					doublon += 1;
+					System.out.println(array[i]);
 				}
-			}
-			
-			if(doublon > 1) {
-				
-				tab2[index] = doublon;
-				
-				index += 1;
-			}
-				
+			}	
 		}
 	}
 
